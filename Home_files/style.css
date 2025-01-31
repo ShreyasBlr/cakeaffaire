@@ -2574,6 +2574,12 @@ html .list-inline-sm {
   margin-right: -5px;
 }
 
+@media (max-width: 575px) {
+  .list-inline-sm li {
+    display: inline-block;
+  }
+}
+
 html .list-inline-sm > * {
   margin-top: 10px;
   padding-left: 5px;
@@ -10338,8 +10344,7 @@ html [class*="section-"].section-top-0 {
 }
 
 .bg-img-1 {
-  background: url("https://ld-wt73.template-help.com/wt_prod-23024/images/bg-img-1.jpg")
-    no-repeat center;
+  background: url("./hero-bg.png") no-repeat center;
   background-size: cover;
   position: relative;
 }
@@ -21071,4 +21076,37 @@ disabled look for disabled choices in the results dropdown
 .box-icon-modern-svg [id*="SVGID"] {
   --color-stop-1: #e9da5d;
   --color-stop-2: #76aa6f;
+}
+
+.mobile-btns {
+  position: fixed;
+  z-index: 999;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  background: #c14679;
+  height: 55px;
+}
+
+.mobile-btns .divider {
+  width: 2px;
+  height: 100%;
+  background: #ffffff;
+}
+
+a.mobile-btn {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 5px;
+  flex: 1;
+  padding: 10px 0;
+  color: #ffffff;
+  font-size: 14px;
+  font-weight: 500;
+  text-align: center;
 }
