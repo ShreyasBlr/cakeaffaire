@@ -2536,6 +2536,29 @@ html .group-custom > * {
 /* .list-inline > li {
   display: inline-block;
 } */
+.footer-qr .shop-txt,
+.footer-qr .shop-txt h6 {
+  text-align: left;
+  color: #ffffff;
+}
+.footer-qr .shop-txt p {
+  margin-top: 5px;
+}
+.store-qr-code {
+  float: left;
+  width: 100%;
+  max-width: 150px;
+}
+@media (max-width: 767.98px) {
+  .footer-qr .shop-txt,
+  .footer-qr .shop-txt h6 {
+    text-align: center;
+  }
+  .store-qr-code {
+    width: 150px;
+    margin-bottom: 10px;
+  }
+}
 .footer-social {
   display: flex;
   justify-items: center;
@@ -5812,6 +5835,8 @@ textarea.textarea-lg {
 
 .quote-carly-figure img {
   border-radius: 50%;
+  width: 60px;
+  height: 60px;
 }
 
 .quote-carly-author {
@@ -21110,6 +21135,7 @@ disabled look for disabled choices in the results dropdown
   align-items: center;
   background: #482d12;
   height: 55px;
+  box-shadow: 0px -3px 20px 0px #372718bf;
 }
 
 .mobile-btns .divider {
